@@ -12,9 +12,6 @@
 /.next/
 /out/
 
-# production
-/build
-
 # misc
 .DS_Store
 *.pem
@@ -33,3 +30,29 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.npm
+
+# Output directories
+dist/
+build/
+out/
+release/
+coverage/
+temp/
+tmp/
+
+# Electron build output
+/.cache/
+/output/
+/dist/
+/release/
+
+# App built assets in dist
+/dist/app.css
+/dist/app.css.map
+/dist/app.js
+/dist/app.js.map
+/dist/main.js
+/dist/main.js.map
+/dist/index.html
+/dist/preload.js

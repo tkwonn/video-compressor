@@ -1,10 +1,10 @@
-import './App.css';
+import './global.css';
 import { useState } from 'react';
 import MainContent from './components/MainContent';
 import Sidebar from './components/Sidebar';
 
-export const App = () => {
-    const [activeComponent, setActiveComponent] = useState('Compressor');
+const App = () => {
+    const [activeComponent, setActiveComponent] = useState('Converter');
 
     return (
         <div className="flex">
@@ -13,3 +13,5 @@ export const App = () => {
         </div>
     );
 };
+
+export default App;
