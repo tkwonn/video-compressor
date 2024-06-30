@@ -13,7 +13,7 @@ build({
         directories: {
             output: 'release',
         },
-        publishell: {
+        publish: {
             // GitHub へデプロイする
             provider: 'github',
             // とりあえず draft としてデプロイ
