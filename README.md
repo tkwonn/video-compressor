@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  ⚡ Video Compressor
+  Video Compressor
   <br>
 </h1>
 
@@ -11,11 +11,11 @@
     A Grafical User Interface to compress and convert your video
 </p>
 
-<!-- <div align="left">
-
-  ![tkwonn](https://img.shields.io/badge/tkwonn-video--compressor-blue?style=for-the-badge&logo=electron)
-
-</div> -->
+<p align="center">
+  <img src="https://img.shields.io/badge/-FFmpeg-007808.svg?logo=ffmpeg&style=popout">
+  <img src="https://img.shields.io/badge/Electron-2F4F4F?logo=electron&style=popout
+  ">
+</p>
 
 ## Demo
 
@@ -23,32 +23,19 @@
 
 | **Category**                             | **Technology**                           |
 |------------------------------------------|------------------------------------------|
-| Programming Language                     | TypeScript                               |
+| Language                                 | TypeScript                               |
 | Framework                                | React, Electron.js                       |
 | Library                                  | ffmpeg                                   |
+
 
 ## Features
 
 | **Features**                             | **Description**                          |
 |------------------------------------------|------------------------------------------|
-| Convert                                  | Supported Formats: MP4, WEBM, GIF        |
 | Compress                                 |                                          |
-| Crop                                     | Aspect ratio                             |
+| Convert                                  | Supported Formats: MP4, WEBM, GIF        |
+| Crop, Subtitles, Resolution              | Work In Progress                         |
 
-## What I learned
-TypeScriptコードはブラウザではなく、OSで実行される
+## Download
 
-Process Model
-- main process modules: browserwindow, app, native apis
-- interactions between renderer process and Node.js and Electron's native desktop functionality.
-- Process Scheduling?
-
-File Manipulation
-- Shared cache memory?
-
-Network & Security
-- public & private key
-- 独自の低レベルネットワーキングをアプリケーションに実装する?
-
-Scalability
-- Need to think
+[Download from here](taesokkwon.com)
