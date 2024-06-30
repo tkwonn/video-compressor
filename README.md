@@ -28,14 +28,6 @@
 | Library                                  | ffmpeg                                   |
 
 
-## Features
-
-| **Features**                             | **Description**                          |
-|------------------------------------------|------------------------------------------|
-| Compress                                 |                                          |
-| Convert                                  | Supported Formats: MP4, WEBM, GIF        |
-| Crop, Subtitles, Resolution              | Work In Progress                         |
-
 ## Download
 
-[Download from here](taesokkwon.com)
+[Download from here](https://github.com/tkwonn/video-compressor/releases)
