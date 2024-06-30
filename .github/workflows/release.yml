@@ -16,12 +16,12 @@ jobs:
     runs-on: ${{ matrix.platform }}
     steps:
       # Actions の基本設定
-      - name: Check out Git repositry
-        uses: actions/checkout@v2
+      - name: Check out Git repository
+        uses: actions/checkout@v3
 
       # Node.js のセットアップ
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 20
 
@@ -40,4 +40,3 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # NPM スクリプト名は 'release' にすることが必須
         run: npm run release
-
