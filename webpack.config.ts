@@ -5,7 +5,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-// 開発者モードか否かで処理を分岐する
 const isDev = process.env.NODE_ENV === 'development';
 
 // 共通設定
@@ -99,7 +98,7 @@ const renderer: Configuration = {
   target: 'web',
   entry: {
     // React アプリのエントリーファイル
-    app: './src/web/index.tsx',
+    app: './src/index.tsx',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -109,6 +108,7 @@ const renderer: Configuration = {
   },
   externals: {
     fs: 'commonjs fs',
+    electron: 'commonjs electron'
   },
   plugins: [
     // CSS を JS へバンドルせず別ファイルとして出力するプラグイン
@@ -119,13 +119,13 @@ const renderer: Configuration = {
      */
     new HtmlWebpackPlugin({
       // テンプレート
-      template: './src/web/index.html',
+      template: './src/index.html',
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: 'public/assets', to: 'assets' }
-      ]
-    })
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     { from: 'public/assets', to: 'assets' }
+    //   ]
+    // })
   ],
 };
 
