@@ -22,7 +22,7 @@
 ![output](https://github.com/tkwonn/video-compressor/assets/66197642/913a132c-17e2-40f5-844c-32384c217306)
 
 
-## Technology Used
+## Technology
 
 | **Category**                             | **Technology**                           |
 |------------------------------------------|------------------------------------------|
