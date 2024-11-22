@@ -1,36 +1,31 @@
-<p align="center">
-  <img src="./.github/icon.png" width="150" />
-</p>
 
-<h1 align="center">
-  Video Compressor
-  <br>
-</h1>
+# Video compressor
 
-<p align="center">
-    A Grafical User Interface to compress and convert your video
-</p>
+[![GitHub last commit](https://img.shields.io/github/last-commit/tkwonn/video-compressor?color=chocolate)](https://github.com/tkwonn/video-compressor/commits/)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/-FFmpeg-007808.svg?logo=ffmpeg&style=popout">
-  <img src="https://img.shields.io/badge/Electron-2F4F4F?logo=electron&style=popout
-  ">
-</p>
+## What is this
+
+A Grafical User Interface to compress and convert your video.
+
+[Download from here](https://github.com/tkwonn/video-compressor/releases)
+
 
 ## Demo
 
-![output](https://github.com/tkwonn/video-compressor/assets/66197642/913a132c-17e2-40f5-844c-32384c217306)
 
 
-## Technology
+## Built with
 
 | **Category**                             | **Technology**                           |
 |------------------------------------------|------------------------------------------|
-| Language                                 | TypeScript                               |
-| Framework                                | React, Electron.js                       |
-| Library                                  | ffmpeg                                   |
+| Frontend                                 | HTML, TailwindCSS, TypeScript, React     |
+| Framework & Tools                        | Electron.js, ffmpeg                      |
+| CI/CD                                    | GitHub Actions                           |
 
+## Features
 
-## Download
+## CI/CD
 
-[Download from here](https://github.com/tkwonn/video-compressor/releases)
+### CI
+
+### CD

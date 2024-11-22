@@ -1,11 +1,9 @@
 import MovieFilterOutlinedIcon from '@mui/icons-material/MovieFilterOutlined';
 import DriveFileMoveOutlinedIcon from '@mui/icons-material/DriveFileMoveOutlined';
-import VideoSettingsIcon from '@mui/icons-material/VideoSettings';
 
 export const sidebarItems = [
     { name: 'Compressor', icon: MovieFilterOutlinedIcon },
     { name: 'Converter', icon: DriveFileMoveOutlinedIcon },
-    { name: 'Video Editor', icon: VideoSettingsIcon },
 ];
 
 export const qualityOptions = [

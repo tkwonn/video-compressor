@@ -1,6 +1,5 @@
 import Compressor from './Compressor';
 import Converter from './Converter';
-import VideoEditor from './VideoEditor';
 
 const MainContent = ({ activeComponent }) => {
   const renderComponent = () => {
@@ -9,8 +8,6 @@ const MainContent = ({ activeComponent }) => {
         return <Compressor />;
       case 'Converter':
         return <Converter />;
-      case 'Video Editor':
-        return <VideoEditor />;
       default:
         return <Compressor />;
     }
