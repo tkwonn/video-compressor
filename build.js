@@ -2,63 +2,36 @@ const { build } = require('electron-builder');
 
 build({
     config: {
-        // package.json の 'name' と異なる名前をつける場合に必要
         productName: 'video-compressor',
-        // 出力ファイル名, 例: Sample-0.0.1-win32-x64.exe
         artifactName: '${productName}-${version}-${platform}-${arch}.${ext}',
         copyright: 'Copyright (c) 2024 Taesok Kwon',
-        // パッケージ対象とするファイル
         files: ['./**/*'],
-        // 出力先とアセットファイル置き場
         directories: {
             output: 'release',
         },
         publish: {
-            // GitHub へデプロイする
             provider: 'github',
-            // とりあえず draft としてデプロイ
-            releaseType: 'draft', // or 'release', 'prerelease'
+            releaseType: 'draft',
         },
-        // Windows 向け設定
         win: {
-            // ICO ファイルが必要
-            // icon: 'assets/win32.ico',
-            // ターゲット
             target: ['nsis', 'zip'],
-            // Windows では 'publisherName' が必要
             publisherName: 'Taesok Kwon',
         },
-        // Windows インストーラの設定
         nsis: {
-            // インストーラと分かる名前にする
             artifactName: '${productName}-${version}-win32-installer.exe',
         },
         mac: {
-            // ICNS ファイルが必要
-            // icon: 'assets/mac.icns',
-            /**
-             * macOS では 'category' が必須
-             * https://developer.apple.com/documentation/bundleresources/information_property_list/lsapplicationcategorytype
-             */
             category: 'public.app-category.developer-tools',
             target: {
-                // macOS では string 型のみ指定可, 配列は使えないことに注意
                 target: 'dmg', // or 'default', 'zip'
-                // Intel, Apple Silicon ともにビルド可能
                 arch: ['x64', 'arm64'],
             },
-            // コード署名しない場合は null の設定が必須
             identity: null,
+            hardenedRuntime: false,
+            gatekeeperAssess: false,
         },
         linux: {
-            // ICO でもいけるが ICNS が一番美しい仕上がりとなる
-            // icon: 'assets/linux.icns',
-            // どのディストロでも使える AppImage を選択
-            target: ['AppImage'], // or 'deb', 'snap' など
-            /**
-             * Linux では 'category' が必要
-             * https://specifications.freedesktop.org/menu-spec/latest/apa.html
-             */
+            target: ['AppImage'], // or 'deb', 'snap'
             category: 'Development',
         },
     },
