@@ -45,3 +45,35 @@ Get the `.dmg` from the releases page and launch the app.
 #### Why is the app unsigned?
 
 Code signing requires an Apple Developer Program subscription and other paid certificates for Windows.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    subgraph MP[Main Process]
+        N[Node.js Runtime]
+        FF[ffmpeg Library]
+    end
+
+    subgraph IPC[IPC Layer]
+        SM[Shared Memory]
+    end
+
+    subgraph RP[Renderer Process]
+        UI[User Interface]
+        DOM[HTML DOM]
+    end
+
+    N --> FF
+    MP <--> SM
+    SM <--> RP
+    UI --> DOM
+
+    classDef mainProcess fill:#e1f5fe,stroke:#01579b
+    classDef rendererProcess fill:#f3e5f5,stroke:#4a148c
+    classDef ipcLayer fill:#fff3e0,stroke:#e65100
+
+    class MP mainProcess
+    class RP rendererProcess
+    class IPC ipcLayer
+```
