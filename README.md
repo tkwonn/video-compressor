@@ -1,6 +1,7 @@
 # Video compressor
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/tkwonn/video-compressor?color=chocolate)](https://github.com/tkwonn/video-compressor/commits/)
+[![Release](https://github.com/tkwonn/video-compressor/actions/workflows/release.yml/badge.svg)](https://github.com/tkwonn/video-compressor/actions/workflows/release.yml)
 
 <br>
 
