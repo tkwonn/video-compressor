@@ -7,7 +7,7 @@
 
 ## What is this
 
-This desktop application lets users compress or convert videos easily through a simple dashboard.
+This desktop application that allows users compress or convert videos easily through a simple dashboard.
 
 <br>
 
@@ -59,7 +59,7 @@ Code signing requires an Apple Developer Program subscription and other paid cer
 
 ## Architecture
 
-Electron's built-in IPC mechanism, implements message-passing between the main process, which accesses the OS and ffmpeg via Node.js, and the renderer process, which manages the UI through the HTML DOM.
+Electron's built-in IPC mechanism implements message-passing between the main process, which accesses the OS and ffmpeg via Node.js, and the renderer process, which manages the UI through the HTML DOM.
 
 ```mermaid
 flowchart LR
